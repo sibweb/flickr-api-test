@@ -23,7 +23,7 @@ export default class Cards extends React.Component {
         }
 
         if(item.author.length > 1){
-          var getName = item.author.match(/\("(.*)"\)/);
+          let getName = item.author.match(/\("(.*)"\)/);
           author = <a style={{"textDecoration":"underline"}} target="_blank" href={"http://www.flickr.com/photos/" + item.author_id}>{getName[1]}</a>;
         }
         if(item.description.length > 1){
